@@ -25,6 +25,8 @@ chmod +x $HOME/bin/move
 cp Masria.tar.gz $HOME/rpgBashGame/Masria.tar.gz
 
 cp new_game.sh $HOME/rpgBashGame/
+cp new_game.sh $HOME/bin/newgame
 chmod +x $HOME/rpgBashGame/new_game.sh
+chmod +x $HOME/bin/newgame
 cd $HOME/rpgBashGame
 tar -xzvf $HOME/rpgBashGame/Masria.tar.gz
