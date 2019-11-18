@@ -1,24 +1,30 @@
 #!/bin/bash
 
+
 #sudo apt update
 #sudo apt install feh
 
+# move es un 'cd vitaminado. Lo que hace es un cd,
+# luego limpia la pantalla, y muestra alguna imagen o .escenario de la pantalla a la que llegas.
 
-# cl es un 'cd vitaminado. Lo que hace es un cd, luego limpia la pantalla, y muestra alguna imagen o .escenario de la pantalla a la que llegas.
+gamedir='$HOME/rpgBashGame'
 
-# cambiar cl a move?
-rm /usr/local/bin/move
-cp move /usr/local/bin/move
-sudo chmod +x /usr/local/bin/move
+if [[ -d $gamedir ]]
+then
+	rm -rf $gamedir
+	rm $HOME/bin/move
 
+fi
 
+mkdir -p $HOME/rpgBashGame
+mkdir -p $HOME/bin
 
+cp move $HOME/bin/move
+chmod +x $HOME/bin/move
 
-rm -rf /opt/bash_game
-# Copiar Hyrule_Orig.tar.gz en /opt/bash_game
-mkdir -p /opt/bash_game
-cp Masria.tar.gz /opt/bash_game
-cp new_game.sh /opt/bash_game
-sudo chmod +x /opt/bash_game/new_game.sh
-cd /opt/bash_game
-tar -xzvf /opt/bash_game/Masria.tar.gz
+cp Masria.tar.gz $HOME/rpgBashGame/Masria.tar.gz
+
+cp new_game.sh $HOME/rpgBashGame/
+chmod +x $HOME/rpgBashGame/new_game.sh
+cd $HOME/rpgBashGame
+tar -xzvf $HOME/rpgBashGame/Masria.tar.gz

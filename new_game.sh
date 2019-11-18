@@ -1,13 +1,17 @@
 #!/bin/bash
 
-rm -rf /opt/bash_game/Masria
+gamedir='$HOME/rpgBashGame'
+
+rm -rf $HOME/rpgBashGame/Masria
 # Copiar Hyrule_Orig.tar.gz en /opt/bash_game
-mkdir -p /opt/bash_game
-cd /opt/bash_game
-tar -xzvf /opt/bash_game/Masria.tar.gz
+mkdir -p $HOME/rpgBashGame
+cd $HOME/rpgBashGame
+tar -xzvf $HOME/rpgBashGame/Masria.tar.gz
+
+
 Mochila=''
 export monedas='100'
-rm /opt/bash_game/Masria/home/Mochila/*
+rm $HOME/rpgBashGame/Masria/home/Mochila/*
 export PS1='Claud@Masria:'
 
 clear
