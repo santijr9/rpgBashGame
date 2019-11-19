@@ -30,3 +30,13 @@ chmod +x $HOME/rpgBashGame/new_game.sh
 chmod +x $HOME/bin/newgame
 cd $HOME/rpgBashGame
 tar -xzvf $HOME/rpgBashGame/Masria.tar.gz
+
+if [[ $? -eq 0 ]]
+then
+	echo "El juego se ha instalado correctamente."
+	read -p "Pulsa [INTRO] para empezar una nueva partida." aaa
+	newgame
+	
+else
+echo "algo no ha ido bien en la instalacion."
+fi
