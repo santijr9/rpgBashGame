@@ -19,4 +19,7 @@ cat Masria/.scene
 echo " "
 read -p "Pulsa la tecla [INTRO] para empezar la aventura!" abc
 
+eog $HOME/rpgBashGame/caratula.png &
+eom $HOME/rpgBashGame/caratula.png &
+
 move Masria

@@ -23,6 +23,7 @@ cp move $HOME/bin/move
 chmod +x $HOME/bin/move
 
 cp Masria.tar.gz $HOME/rpgBashGame/Masria.tar.gz
+cp caratula.png $HOME/rpgBashGame/caratula.png
 
 cp new_game.sh $HOME/rpgBashGame/
 cp new_game.sh $HOME/bin/newgame
