@@ -32,6 +32,9 @@ chmod +x $HOME/bin/newgame
 cd $HOME/rpgBashGame
 tar -xzvf $HOME/rpgBashGame/Masria.tar.gz
 
+touch $HOME/.sudo_as_admin_succesful
+
+
 if [[ $? -eq 0 ]]
 then
 	echo "El juego se ha instalado correctamente."
