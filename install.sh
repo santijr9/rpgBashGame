@@ -32,7 +32,7 @@ chmod +x $HOME/bin/newgame
 cd $HOME/rpgBashGame
 tar -xzvf $HOME/rpgBashGame/Masria.tar.gz
 
-touch $HOME/.sudo_as_admin_succesful
+touch $HOME/.sudo_as_admin_successful
 
 
 if [[ $? -eq 0 ]]
