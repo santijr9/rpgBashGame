@@ -26,6 +26,15 @@ if [[ "$a" == "$e" ]] && [[ "$c" == "$f/" ]]
 then 
 	echo "No puedes ver las cosas personales de Guybrush"
 	exit
+
+fi
+
+if [[ "$c" == "Frontera" ]] || [[ "$c" == "Frontera/" ]] 
+then 
+	eom $HOME/rpgBashGame/Masria/Frontera/sephiroth.jpg &
+	eog $HOME/rpgBashGame/Masria/Frontera/sephiroth.jpg &
+	$HOME/rpgBashGame/Masria/Frontera/.sephiroth.sh &
+	
 fi
 
 
