@@ -12,7 +12,7 @@ gamedir='$HOME/rpgBashGame'
 if [[ -d $gamedir ]]
 then
 	rm -rf $gamedir
-	rm $HOME/bin/move
+	rm $HOME/bin/*
 
 fi
 
@@ -21,6 +21,9 @@ mkdir -p $HOME/bin
 
 cp move $HOME/bin/move
 chmod +x $HOME/bin/move
+
+cp cat_game $HOME/bin/cat_game
+chmod +x $HOME/bin/cat_game
 
 cp Masria.tar.gz $HOME/rpgBashGame/Masria.tar.gz
 cp caratula.png $HOME/rpgBashGame/caratula.png
