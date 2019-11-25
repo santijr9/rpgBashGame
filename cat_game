@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ "$#" -eq 0 ]]
+then /bin/echo "[el comando ejecutado necesita mínimo un argumento]"
+else 
+	echo $1
+	
+
+	
+fi
+exit
+
