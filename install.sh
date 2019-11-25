@@ -35,6 +35,13 @@ tar -xzvf $HOME/rpgBashGame/Masria.tar.gz
 touch $HOME/.sudo_as_admin_successful
 
 
+
+cp $HOME/.bashrc $HOME/.bashrc_game
+echo "alias cd='move'" >> $HOME/.bashrc_game
+echo "alias echo='cat'" >> $HOME/.bashrc_game
+
+
+
 if [[ $? -eq 0 ]]
 then
 	echo "El juego se ha instalado correctamente."
