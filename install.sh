@@ -13,6 +13,7 @@ if [[ -d $gamedir ]]
 then
 	rm -rf $gamedir
 	rm $HOME/bin/*
+	rm $HOME/.bashrc_game
 
 fi
 
