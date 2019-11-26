@@ -26,18 +26,26 @@ chmod +x $HOME/bin/move
 cp cat_game $HOME/bin/cat_game
 chmod +x $HOME/bin/cat_game
 
+cp continuegame $HOME/bin/continuegame
+chmod +x $HOME/bin/continuegame
+
 cp Masria.tar.gz $HOME/rpgBashGame/Masria.tar.gz
 cp caratula.png $HOME/rpgBashGame/caratula.png
 
 cp new_game.sh $HOME/rpgBashGame/
 cp new_game.sh $HOME/bin/newgame
+
 chmod +x $HOME/rpgBashGame/new_game.sh
 chmod +x $HOME/bin/newgame
+
+
+
+
 cd $HOME/rpgBashGame
 tar -xzvf $HOME/rpgBashGame/Masria.tar.gz
 
+#solventar queja de consola lliurex en usuario normal.
 touch $HOME/.sudo_as_admin_successful
-
 
 
 cp $HOME/.bashrc $HOME/.bashrc_game
