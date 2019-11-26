@@ -40,6 +40,9 @@ clear
 
 cd "$1" && cat .escenario
 
+saved_game=$(pwd)
+echo $saved_game > $HOME/rpgBashGame/saved_game
+
 export Mochila=$HOME/rpgBashGame/Masria/home/Mochila
 export monedas
 exec bash --rcfile <(cat ~/.bashrc_game; echo 'PS1="\[\033[01;32m\]Cloud@World\[\033[00m\] : \[\033[01;34m\]\w\[\033[00m\] > "')
