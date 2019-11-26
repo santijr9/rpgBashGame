@@ -32,10 +32,7 @@ chmod +x $HOME/bin/continuegame
 cp Masria.tar.gz $HOME/rpgBashGame/Masria.tar.gz
 cp caratula.png $HOME/rpgBashGame/caratula.png
 
-cp new_game.sh $HOME/rpgBashGame/
-cp new_game.sh $HOME/bin/newgame
-
-chmod +x $HOME/rpgBashGame/new_game.sh
+cp newgame $HOME/bin/newgame
 chmod +x $HOME/bin/newgame
 
 
@@ -52,6 +49,8 @@ cp $HOME/.bashrc $HOME/.bashrc_game
 echo "alias cd='move'" >> $HOME/.bashrc_game
 echo "alias cat='cat_game'" >> $HOME/.bashrc_game
 
+#MAC OS X
+PATH=$PATH:$HOME/bin
 
 if [[ $? -eq 0 ]]
 then
