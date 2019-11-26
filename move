@@ -85,11 +85,11 @@ then
 fi
 
 
-#clear
+clear
 
 if [[ $nivel -le 3 ]]
 then 
-	echo "VUELVE"
+	
 	move $HOME/rpgBashGame/Masria
 	cd $HOME/rpgBashGame/Masria && cat .escenario
 	
@@ -101,5 +101,4 @@ fi
 saved_game=$(pwd)
 echo $saved_game > $HOME/rpgBashGame/saved_game
 export Mochila=$HOME/rpgBashGame/Masria/home/Mochila
-export monedas
 exec bash --rcfile <(cat ~/.bashrc_game; echo 'PS1="\[\033[01;32m\]Cloud@World\[\033[00m\] : \[\033[01;34m\]\w\[\033[00m\] > "')
