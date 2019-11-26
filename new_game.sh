@@ -21,9 +21,13 @@ cat Masria/.scene
 echo " "
 read -p "Pulsa la tecla [INTRO] para empezar la aventura!" abc
 
+#PATH MAC OS X
 PATH=$PATH:$HOME/bin
+
+
 
 eog $HOME/rpgBashGame/caratula.png &
 eom $HOME/rpgBashGame/caratula.png &
+/System/Applications/Preview.app/Contents/MacOS/Preview &
 
 move Masria
