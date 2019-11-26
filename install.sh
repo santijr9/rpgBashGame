@@ -55,6 +55,10 @@ PATH=$PATH:$HOME/bin
 echo "PATH=$PATH:$HOME/bin" >> $HOME/.bashrc
 echo "PATH=$PATH:$HOME/bin" >> $HOME/.zshrc
 
+echo "export BASH_SILENCE_DEPRECATION_WARNING=1" >> $HOME/.bashrc_game
+
+
+
 if [[ $? -eq 0 ]]
 then
 	echo "El juego se ha instalado correctamente."
