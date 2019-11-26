@@ -80,6 +80,9 @@ then
 	then
 		eom $HOME/rpgBashGame/Masria/Frontera/sephiroth.jpg &
 	fi
+	
+	open $HOME/rpgBashGame/Masria/Frontera/sephiroth.jpg &
+	
 	$HOME/rpgBashGame/Masria/Frontera/.sephiroth.sh &
 	
 fi
