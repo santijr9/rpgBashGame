@@ -2,7 +2,7 @@
 
 gamedir='$HOME/rpgBashGame'
 
-cd $HOME/rpgBashGame
+#cd $HOME/rpgBashGame
 
 export PS1='Claud@Masria:'
 
@@ -10,8 +10,23 @@ clear
 echo " "
 read -p "Pulsa la tecla [INTRO] para continuar la aventura donde te quedaste!" abc
 
-eog $HOME/rpgBashGame/caratula.png &
-eom $HOME/rpgBashGame/caratula.png &
+
+if [[ $(uname) == "Darwin" ]]
+then
+
+	#PATH MAC OS X
+	PATH=$PATH:$HOME/bin
+	open $HOME/rpgBashGame/caratula.png &
+fi
+
+if [[ -f /usr/bin/eog ]]
+then eog $HOME/rpgBashGame/caratula.png &
+fi
+
+if [[ -f /usr/bin/eom ]]
+then eom $HOME/rpgBashGame/caratula.png &
+fi
+
 
 ubicacion=$(cat $HOME/rpgBashGame/saved_game)
 

@@ -1,22 +1,15 @@
 #!/bin/bash
 
 dir=$(pwd)
-a=$dir
-b=$HOME/rpgBashGame/Masria
 c=$1
-d=".."
-e="$HOME/rpgBashGame/Masria/Valentia/Wall_Market/GrogsTabern"
-f="cosas_de_Guybrush"
-
 
 nivel=$(tr -dc '/' <<<"$dir" | awk '{ print length; }')
 
-# nivel 2 home usuario
+# nivel 2 home/usuario
 # nivel 3 carpeta juego
 # nivel 4 carpeta Masria
 # nivel 5 Valentia..
 # maximo hay nivel 7.
-
 
 
 
@@ -45,13 +38,15 @@ then
 fi
 
 
+## si el argumento de cd empieza por /,  no dejar si no escribe una ruta completa hasta Masria ;)
 
-## si el argumento de cd empieza por /,  no dejar.
-
-if [[ $c == /* ]] 
-then 
-	echo "No puedes salirte del Juego ahora!!"
-	exit
+if [[ $c == /* ]]
+then	
+	if [[ $c == *Masria* ]]
+	then 	echo ""
+	else 	echo "No puedes salirte del Juego ahora!!"
+		exit
+	fi
 fi
 
 
@@ -92,11 +87,13 @@ clear
 
 if [[ $nivel -le 3 ]]
 then 
+	# new game
+	# continue_game
+	# o Ha conseguido salirse de algún modo.
+	ubicacion=$(cat $HOME/rpgBashGame/saved_game)
+	cd $ubicacion && cat .escenario
 	
-	move $HOME/rpgBashGame/Masria
-	cd $HOME/rpgBashGame/Masria && cat .escenario
-	
-else cd "$1" && cat .escenario
+else 	cd "$1" && cat .escenario
 
 fi
 
