@@ -41,7 +41,6 @@ touch $HOME/.sudo_as_admin_successful
 
 cp $HOME/.bashrc $HOME/.bashrc_game
 echo "alias cd='move'" >> $HOME/.bashrc_game
-echo "alias echo='cat_game'" >> $HOME/.bashrc_game
 echo "alias cat='cat_game'" >> $HOME/.bashrc_game
 
 
