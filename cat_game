@@ -1,10 +1,19 @@
 #!/bin/bash
 
+
 if [[ "$#" -eq 0 ]]
 then /bin/echo "[el comando ejecutado necesita mínimo un argumento]"
 else 
-	echo $1
 	
+	## hay un argumento.   
+	# hacemos cat si es un fichero.
+
+	if [[ -f $1 ]]
+	then
+		cat $1
+	else
+		echo "[Error, $1 no existe o no es un fichero (objeto)"
+	fi	
 
 	
 fi
