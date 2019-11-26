@@ -28,6 +28,6 @@ PATH=$PATH:$HOME/bin
 
 eog $HOME/rpgBashGame/caratula.png &
 eom $HOME/rpgBashGame/caratula.png &
-/System/Applications/Preview.app/Contents/MacOS/Preview &
+open $HOME/rpgBashGame/caratula.png &
 
 move Masria
