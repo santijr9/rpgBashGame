@@ -3,9 +3,11 @@
 gamedir='$HOME/rpgBashGame'
 
 rm -rf $HOME/rpgBashGame/Masria
-# Copiar Hyrule_Orig.tar.gz en /opt/bash_game
+
+
 mkdir -p $HOME/rpgBashGame
 cd $HOME/rpgBashGame
+echo "$HOME/rpgBashGame/Masria" > saved_game
 tar -xzvf $HOME/rpgBashGame/Masria.tar.gz
 
 
