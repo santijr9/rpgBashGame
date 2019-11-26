@@ -8,17 +8,34 @@ Download all files, install it with:
 
 sudo ./install.sh
 
-Game should be installed in /opt/bash_game. 
+or 
 
-How to play
+bash install.sh
+
+
+Game will be installed in HOME/rpgBashGame. 
+
+
+How to play a new game from beginning:
 --------
 
 Just run: 
 
-/opt/bash_game/new_game.sh
+newgame
 
 
-Remember, to move in the game, don't use cd. You need to use "move" command.
+How to continue your current "saved game":
+--------
+
+Just run: 
+
+continuegame
+
+
+Other things:
+--------
+
+Remember, to move in the game you can use "move" or "cd" command.
 
 Have a nice time.
 
