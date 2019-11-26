@@ -1,0 +1,18 @@
+#!/bin/bash
+
+gamedir='$HOME/rpgBashGame'
+
+cd $HOME/rpgBashGame
+
+export PS1='Claud@Masria:'
+
+clear
+echo " "
+read -p "Pulsa la tecla [INTRO] para continuar la aventura donde te quedaste!" abc
+
+eog $HOME/rpgBashGame/caratula.png &
+eom $HOME/rpgBashGame/caratula.png &
+
+ubicacion=$(cat $HOME/rpgBashGame/saved_game)
+
+move $ubicacion
