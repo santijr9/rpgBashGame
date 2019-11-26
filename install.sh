@@ -52,6 +52,9 @@ echo "alias cat='cat_game'" >> $HOME/.bashrc_game
 #MAC OS X
 PATH=$PATH:$HOME/bin
 
+echo "PATH=$PATH:$HOME/bin" >> $HOME/.bashrc
+echo "PATH=$PATH:$HOME/bin" >> $HOME/.zshrc
+
 if [[ $? -eq 0 ]]
 then
 	echo "El juego se ha instalado correctamente."
